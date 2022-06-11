@@ -49,7 +49,6 @@ public class T1245Solution {
             }
         }
 
-        ThreadPoolExecutor executor = new ThreadPoolExecutor(corePoolSize, maximumPoolSize, keepAliveTime, unit, workQueue);
-        
+
     }
 }

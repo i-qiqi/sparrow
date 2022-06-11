@@ -33,8 +33,8 @@ public class T322Solution {
             }
     
             int left = 0;
-            for (int start = 0; )
-            map.put(sum, cnt);
+//            for (int start = 0; )
+//            map.put(sum, cnt);
             traceback(coins, start, cnt+1, sum + coins[start]);
             traceback(coins, start + 1, cnt, sum);
         }
@@ -57,6 +57,57 @@ public class T322Solution {
             }
 
             return dp[amount] == amount + 1 ? -1 : dp[amount];
+        }
+    }
+
+    /**
+     * 完全背包也可以做
+     */
+    class Solution01 {
+        public int coinChange(int[] coins, int amount) {
+            // dp[i][j] = min(dp[i-1][j], dp[i][j-coins[i]] + 1)
+            int[][] dp = new int[coins.length+1][amount+1];
+            for(int j = 1; j <= amount; j++){
+                dp[0][j] = amount+1;
+            }
+            for(int i = 0; i <= coins.length; i++){
+                dp[i][0] = 0;
+            }
+
+            for(int i = 1; i <= coins.length; i++){
+                for(int j = 1; j <= amount; j++){
+                    dp[i][j] = dp[i-1][j];
+                    if(j >= coins[i-1]){
+                        dp[i][j] = Math.min(dp[i][j-coins[i-1]] + 1, dp[i][j]);
+                    }
+                }
+            }
+
+            return dp[coins.length][amount] == amount+1 ? -1 : dp[coins.length][amount];
+        }
+    }
+
+    /**
+     * 状态压缩
+     */
+    class Solution02 {
+        public int coinChange(int[] coins, int amount) {
+            // dp[i][j] = min(dp[i-1][j], dp[i][j-coins[i]] + 1)
+            int[] dp = new int[amount+1];
+            for(int j = 1; j <= amount; j++){
+                dp[j] = amount+1;
+            }
+            dp[0] = 0;
+
+            for(int i = 1; i <= coins.length; i++){
+                for(int j = 1; j <= amount; j++){
+                    if(j >= coins[i-1]){
+                        dp[j] = Math.min(dp[j-coins[i-1]] + 1, dp[j]);
+                    }
+                }
+            }
+
+            return dp[amount] == amount+1 ? -1 : dp[amount];
         }
     }
 

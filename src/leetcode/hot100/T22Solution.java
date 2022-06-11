@@ -44,8 +44,41 @@ public class T22Solution {
         dfs(path + ")", leftCnt, rightCnt + 1, n);
     }
 
+    class Solution {
+        List<String> res;
+        public List<String> generateParenthesis(int n) {
+            res = new ArrayList<>();
+            dfs(0, 0, new StringBuilder(), n);
+            return res;
+        }
+
+        public void dfs(int left, int right, StringBuilder path, int n){
+            if(left + right > 2*n) return;
+            if(left == n && right == n) {
+                res.add(path.toString());
+            }
+
+            if(right > left) return;
+            if(left > n) return;
+
+
+            path.append('(');
+            dfs(left+1, right, path, n);
+            path.deleteCharAt(path.length()-1);
+
+            path.append(')');
+            dfs(left, right+1, path, n);
+            path.deleteCharAt(path.length()-1);
+        }
+    }
+
     public static void main(String[] args) {
         T22Solution solution = new T22Solution();
-        solution.generateParenthesis(3);
+//        solution.generateParenthesis(3);
+        StringBuilder sb = new StringBuilder("abc");
+//        sb.reverse();
+        System.out.println(sb.toString());
+        StringBuilder rsb = new StringBuilder("abc").reverse();
+        System.out.println(rsb.toString());
     }
 }

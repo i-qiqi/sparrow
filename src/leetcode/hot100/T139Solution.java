@@ -41,10 +41,24 @@ public class T139Solution {
         return null;
     }
 
-    public void tracebackII(){
-        
+    public void tracebackII() {
+
     }
 
+    class Solution1 {
+        public boolean wordBreak(String s, List<String> wordDict) {
+            boolean[] dp = new boolean[s.length() + 1];
+            dp[0] = true;
+            for (int i = 1; i <= s.length(); i++) {
+                for (String w : wordDict) {
+                    if (i >= w.length() && w.equals(s.substring(i - w.length(), i))) {
+                        dp[i] = dp[i] || dp[i - w.length()];
+                    }
+                }
+            }
+            return dp[s.length()];
+        }
+    }
 
 
 }

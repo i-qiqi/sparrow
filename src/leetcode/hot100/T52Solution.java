@@ -103,6 +103,32 @@ public class T52Solution {
         return s;
     }
 
+    class Solution {
+        int ans = 0;
+
+        public int totalNQueens(int n) {
+            dfs(n, 0, 0, (1 << n) - 1);
+            return ans;
+        }
+
+        public void dfs(int k, int leftDiagnoal, int rightDiagnoal, int row) {
+            if (k == 0) {
+                ans++;
+                return;
+            }
+
+            //选择1
+            int curRow = row & (~leftDiagnoal) & (~rightDiagnoal);
+            while (curRow != 0) {
+                //选最后一个1的位置置为0
+                int selectedPos = curRow & (-curRow);
+                dfs(k - 1, (leftDiagnoal | selectedPos) >> 1, (rightDiagnoal | selectedPos) << 1, row & (~selectedPos));
+                //下一个1
+                curRow = curRow & (curRow - 1);
+            }
+        }
+    }
+
     public static void main(String[] args) {
         // System.out.println(solution.totalNQueens(1));
         // System.out.println(solution.totalNQueens(2));

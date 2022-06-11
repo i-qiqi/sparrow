@@ -44,4 +44,11 @@ public class T207Solution {
         }
         return cnt == 0;
     }
+
+    public static void main(String[] args) {
+        Map<Integer, List<Integer>> edges = new HashMap<>();
+        for(Map.Entry<Integer, List<Integer>> e : edges.entrySet()){
+            System.out.println(e.getKey());
+        }
+    }
 }

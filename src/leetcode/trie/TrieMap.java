@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.concurrent.ConcurrentHashMap;
 
 import javax.swing.text.rtf.RTFEditorKit;
 
@@ -194,14 +195,10 @@ public class TrieMap<V> {
 
     public static void main(String[] args) {
         Hashtable table = new Hashtable<>();
-        HashMap map = new HashMap<>();
         String s = "";
         s.equals("");
-        setup-x86_64 -q -P wget -P gcc-g++ -P make -P diffutils -P libmpfr-devel -P libgmp-devel -P libmpc-devel
-
 
     }
 }
-
 
 

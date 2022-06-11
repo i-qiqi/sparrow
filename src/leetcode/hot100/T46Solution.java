@@ -15,7 +15,7 @@ public class T46Solution {
         return ans;  
     }
 
-    private void helper(int[] nums, int start, List<Integer> path){
+    private void helper(int[] nums, int start, LinkedList<Integer> path){
 
         if (start == nums.length) {
             ans.add(new ArrayList<>(path));
@@ -26,7 +26,7 @@ public class T46Solution {
             swap(nums, i, start);
             path.addLast(nums[start]);
             helper(nums, start+1, path);
-            path.remove(o)
+            path.removeLast();
             swap(nums, i, start);
         }
     }

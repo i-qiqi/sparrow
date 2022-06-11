@@ -41,7 +41,7 @@ public class T210Solution {
                 inDegrees[v]--;
                 if (inDegrees[v] == 0) {
                     cnt--;
-                    stack.addLast(v);
+                    queue.addLast(v);
                 }
             }
         }

@@ -1,4 +1,4 @@
-package leetcode.hot100;
+package leetcode.cache;
 
 import java.util.Deque;
 import java.util.HashMap;

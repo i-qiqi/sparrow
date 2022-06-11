@@ -37,4 +37,54 @@ public class T114Solution {
             return root;
         }
     }
+
+    class Solution1 {
+        TreeNode prev;
+
+        public void flatten(TreeNode root) {
+            preOrder(root);
+        }
+
+        void preOrder(TreeNode root) {
+            if (root == null) return;
+            TreeNode tempRight = root.right;
+            if (prev != null) {
+                prev.right = root;
+                prev.left = null;
+            }
+            prev = root;
+            preOrder(root.left);
+            preOrder(tempRight);
+        }
+
+    }
+
+    /**
+     * O(n)
+     * O(1)
+     */
+    class Solution2 {
+        //morris 遍历
+        public void flatten(TreeNode root) {
+            TreeNode p = root;
+            TreeNode left, right, t;
+            while (p != null) {
+                right = p.right;
+                left = p.left;
+                if (left == null) {
+                    p = right;
+                } else {
+                    //修改左子树最有节点right指针
+                    t = left;
+                    while (t.right != null) {
+                        t = t.right;
+                    }
+                    t.right = right;
+                    p.right = left;
+                    p.left = null;
+                    p = left;
+                }
+            }
+        }
+    }
 }
