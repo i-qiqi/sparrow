@@ -29,7 +29,7 @@ public class T373Solution {
 
             int a = poll[0], b = poll[1];
 
-            ans.add(new ArrayList<>() {{
+            ans.add(new ArrayList<Integer>() {{
                 add(flag ? nums1[a] : nums2[b]);
                 add(flag ? nums2[b] : nums1[a]);
             }});

@@ -44,7 +44,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/cygwin/bin/mintty.exe" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -56,16 +56,10 @@
       <recent name="nio" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.T402Solution">
-    <configuration name="T18Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.math.T18Solution" />
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="App" />
       <module name="sparrow" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.math.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -133,11 +127,19 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
         <item itemvalue="Python.T402Solution" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+    <option name="myConnectionType" value="NONE" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\bqzhu\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="7d415c93-4631-4924-9f1f-ade0e5bf1403" name="Changes" comment="" />
@@ -172,9 +174,18 @@
       <workItem from="1667026336574" duration="170000" />
       <workItem from="1667026520742" duration="11895000" />
       <workItem from="1667498357503" duration="503000" />
-      <workItem from="1667498874073" duration="477000" />
+      <workItem from="1667498874073" duration="1590000" />
+      <workItem from="1667500489428" duration="489000" />
+      <workItem from="1667500996535" duration="532000" />
+      <workItem from="1667501548469" duration="461000" />
+      <workItem from="1667502199244" duration="15546000" />
     </task>
     <servers />
+  </component>
+  <component name="TerminalProjectNonSharedOptionsProvider">
+    <envs>
+      <env key="COMPUTERNAME" value="zbq_savior" />
+    </envs>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
