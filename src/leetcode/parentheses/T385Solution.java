@@ -124,5 +124,11 @@ public class T385Solution {
         }
     }
 
+    public static void main(String[] args) {
+        System.out.println("10".compareTo("101"));
+        System.out.println("11".compareTo("101"));
+        System.out.println("1".compareTo("10"));
+    }
+
 
 }

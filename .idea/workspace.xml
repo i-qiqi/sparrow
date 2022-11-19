@@ -44,7 +44,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/cygwin/bin/mintty.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../i-qiqi.github.io" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -56,7 +56,7 @@
       <recent name="nio" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Application.T385Solution">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="App" />
       <module name="sparrow" />
@@ -64,12 +64,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T273Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.str.T273Solution" />
+    <configuration name="T385Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.parentheses.T385Solution" />
       <module name="sparrow" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.str.*" />
+          <option name="PATTERN" value="leetcode.parentheses.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,6 +127,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.T385Solution" />
         <item itemvalue="Application.App" />
         <item itemvalue="Python.T402Solution" />
       </list>
@@ -178,7 +179,9 @@
       <workItem from="1667500489428" duration="489000" />
       <workItem from="1667500996535" duration="532000" />
       <workItem from="1667501548469" duration="461000" />
-      <workItem from="1667502199244" duration="15546000" />
+      <workItem from="1667502199244" duration="17812000" />
+      <workItem from="1668225920450" duration="4528000" />
+      <workItem from="1668867367044" duration="1795000" />
     </task>
     <servers />
   </component>
